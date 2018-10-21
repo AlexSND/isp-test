@@ -1,0 +1,22 @@
+<header class="page-header">
+  <h3 class="page-header__title">
+    {{title}}
+  </h3>
+  <input
+    class="page-header__search"
+    type="text"
+    placeholder="искать..."
+    [(ngModel)]="searchText">
+</header>
+<app-list-head></app-list-head>
+<ul>
+  <app-list-item
+    *ngFor='let item of data | search : searchText'
+    [name]="item.name"
+    [link]="item.link"
+    [favorite]="item.favorite"
+    [hidden]="item.hidden"
+    (removeFromFavorite)="removeFromFavorite($event)"
+    >
+  </app-list-item>
+</ul>

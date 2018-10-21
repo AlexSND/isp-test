@@ -1,0 +1,40 @@
+<li class="list-item">
+  <div class='list-item__name'>
+    {{name}}
+  </div>
+  <a appTooltip link={{link}} class="list-item__link" href={{link}}>
+    {{link}}
+  </a>
+  <div class="list-item__image">
+    <img src={{link}} alt={{name}}>
+  </div>
+  <div class="list-item__controls">
+
+    <button
+      *ngIf="showAddToFavorite"
+      class="list-item__favorite" 
+      (click)="addToFavorite.emit(name)"
+      [class.list-item__favorite_active]="favorite">
+    </button>
+    
+    <button
+      *ngIf="showAddToHidden"
+      class="list-item__remove"
+      (click)="addToHidden.emit(name)">
+    </button>
+    
+    <button
+      *ngIf="showRemoveFromFavorite"
+      class="list-item__remove"
+      (click)="removeFromFavorite.emit(name)">
+    </button>
+    
+    <button
+      *ngIf="showRemoveFromHidden"
+      class="list-item__button"
+      (click)="removeFromHidden.emit(name)">
+      Восстановить
+    </button>
+
+  </div>
+</li>

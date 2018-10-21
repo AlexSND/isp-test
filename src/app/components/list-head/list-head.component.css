@@ -1,0 +1,28 @@
+.list-head {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.list-head__name {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.list-head__link {
+  flex-basis: 100%;
+}
+
+.list-head__image {
+  width: 60px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.list-head__controls {
+  width: 150px;
+  flex-shrink: 0;
+  text-align: right;
+}

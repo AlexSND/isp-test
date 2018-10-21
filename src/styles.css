@@ -1,0 +1,26 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  transition: all 0.2s;
+  box-sizing: inherit;
+}
+
+a, a:active, a:visited {
+  color: #00A2FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

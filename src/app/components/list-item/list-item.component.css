@@ -1,0 +1,85 @@
+button {
+  margin-left: 15px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.list-item__name {
+  font-size: 13px;
+  width: 200px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  color:#606060;
+  overflow: hidden;
+}
+
+.list-item__link {
+  flex-basis: 100%;
+  font-size: 14px;
+}
+
+.list-item__image {
+  width: 60px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.list-item__image img {
+  width: 25px;
+  height: 25px;
+}
+
+.list-item__controls {
+  width: 150px;
+  flex-shrink: 0;
+  text-align: right;
+}
+.list-item__button {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.list-item__favorite {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-image: url('/assets/img/favorite.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.list-item__favorite_active {
+  background-image: url('/assets/img/favorite_active.svg');
+}
+
+.list-item__remove {
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  border: none;
+  background-image: url('/assets/img/remove.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.list-item__tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #fff;
+}
